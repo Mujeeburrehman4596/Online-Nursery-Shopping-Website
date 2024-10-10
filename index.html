@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursery Plant Shopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Nursery Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cart-icon" href="#">
+                        <i class="bi bi-cart"></i>
+                        <span class="badge bg-danger" id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="container text-center my-5">
+    <h1 class="mb-3">Buy Fresh Plants for Your Home Garden</h1>
+    <p>Explore our collection of nursery plants and bring home your favorite one.</p>
+</div>
+
+<!-- Product Listing -->
+<div class="container">
+    <div class="row">
+        <!-- Product Card 1 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-card text-center">
+                <img src="https://via.placeholder.com/200" alt="Plant 1" class="img-fluid">
+                <h5 class="mt-3">Fiddle Leaf Fig</h5>
+                <p class="price">$30.00</p>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Fiddle Leaf Fig', 30)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-card text-center">
+                <img src="https://via.placeholder.com/200" alt="Plant 2" class="img-fluid">
+                <h5 class="mt-3">Peace Lily</h5>
+                <p class="price">$25.00</p>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Peace Lily', 25)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-card text-center">
+                <img src="https://via.placeholder.com/200" alt="Plant 3" class="img-fluid">
+                <h5 class="mt-3">Snake Plant</h5>
+                <p class="price">$20.00</p>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Snake Plant', 20)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="mt-5">
+    <div class="container">
+        <p>&copy; 2024 Online Nursery Plant Shop. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
